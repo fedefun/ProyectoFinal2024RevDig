@@ -6,6 +6,8 @@ body {
     background: radial-gradient(circle, rgba(174,238,238,1) 0%, rgba(188,148,233,1) 100%); 
     margin: 0px;
     text-align: center;
+    min-height: 100vh;
+    
 }
 
 a{
@@ -72,9 +74,9 @@ section h1{
 }
 
 section.section1{
-    display: flex;
-    
+    display: flex;  
     flex-wrap: wrap-reverse;
+    justify-content: space-between;
 }
 
 .izq {
@@ -159,12 +161,12 @@ section.section1{
 
 /* PRUEBAS PARA LAS LISTAS */
 
-/* Estilo para la sección de servicios */
+
 #nuestrosServicios {
     padding: 20px;
 }
 
-/* Contenedor de contenido */
+
 #nuestrosServicios .contenido {
     display: flex;
     flex-wrap: wrap;
@@ -172,7 +174,7 @@ section.section1{
     margin-bottom: 20px;
 }
 
-/* Estilos para cada descripción de servicio */
+
 #nuestrosServicios .descripcion {
     flex: 1 1 calc(25% - 20px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -183,45 +185,163 @@ section.section1{
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* Efecto hover para las tarjetas de servicio */
+
 #nuestrosServicios .descripcion:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para los títulos de los servicios */
+
 #nuestrosServicios .caractserv h2 {
-    font-size: 1.5em;
+    font-size: 24px;
     margin-bottom: 10px;
     color: #007BFF;
 }
 
-/* Estilo para las listas */
+
 #nuestrosServicios .caractserv ul {
     list-style-type: none;
     padding: 0;
 }
 
-/* Estilo para los ítems de la lista */
+
 #nuestrosServicios .caractserv ul li {
     padding-left: 20px;
     margin-bottom: 10px;
     color: #555;
 }
 
-/* Estilo para el footer */
+/* Footer */
+
 .footer {
     background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
     position: relative;
-    bottom: 0;
+    width: 100%;
+    
+}
+
+.footer .copyright {
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* FAQ */
+
+
+h1#faq.preguntas {
+    text-align: center;
+    color: #555555;
+    margin-top: 20px;
+    font-size: 32px;
+    border-bottom: 2px solid #6d4545;
+    padding-bottom: 10px;
+}
+
+section.serviciosPrinc {
+    max-width: auto;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+ul.listafaq {
+    list-style: none;
+    padding: 0;
+}
+
+ul.listafaq li {
+    
+    border: 1px solid #221c7c7a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+ul.listafaq li p {
+    margin: 0;
+    font-size: 18px;
+    color: #272727;
+}
+
+ul.listafaq li p:first-child {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+ul.listafaq li .respuestafaq {
+    margin-top: 10px;
+    display: none;
+    color: #525252;
+}
+
+ul.listafaq li.active .respuestafaq {
+    display: block;
+}
+
+/* Contacto */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+input[type="text"],
+input[type="email"],
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Carousel */
+
+.h1fotos{ 
+    text-align: center;
+    color: #555555;
+    margin-top: 20px;
+    font-size: 32px;
+    border-bottom: 2px solid #6d4545;
+    padding-bottom: 10px;
+
+}
+
+.fotos {
+    display: flex;
+    overflow: hidden;
     width: 100%;
 }
 
-/* Estilo para el texto de copyright */
-.footer .copyright {
-    font-size: 0.9em;
-    margin: 0;
+.fototrab {
+    flex: 0 0 auto;
+    transition: transform 0.5s ease;
+}
+
+.fototrab img {
+    width: 100%;
+    height: auto;
 }

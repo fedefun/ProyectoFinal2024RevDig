@@ -1,0 +1,227 @@
+/* Body y header*/
+
+body {
+    font-family: system-ui, sans-serif;
+    background: rgb(174,238,238);
+    background: radial-gradient(circle, rgba(174,238,238,1) 0%, rgba(188,148,233,1) 100%); 
+    margin: 0px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+header{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: flex-end;
+    background: rgb(118, 185, 185);
+    background: radial-gradient(circle, rgb(117, 170, 170) 0%, rgb(161, 126, 201) 100%); 
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Nav bar */
+
+header nav{
+    display: inline-flex;
+    margin-bottom: 10px;
+    margin-left: auto;
+    position: relative;
+    align-items: flex-end;
+}
+
+#logo {
+    margin: 0px 15px;
+    width: 200px;
+    height: 200px; 
+}
+
+header nav a {
+    display: inline-block;
+    text-align: center;
+    padding: 20px 15px;
+    text-decoration: none;
+    
+}
+
+header nav a:hover{
+    color: #17440977;
+}
+
+/* Section */
+
+section {
+    padding: 15px 5px;
+    margin: 0px;
+    color: rgba(148, 76, 243, 0.87);
+    background: rgb(118, 185, 185);
+    background: radial-gradient(circle, rgb(117, 170, 170) 0%, rgb(161, 126, 201) 100%); 
+    text-shadow: 1px 1px 1px black;
+
+}
+
+section h1{
+    font-weight: lighter;
+    font-size: 48px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+section.section1{
+    display: flex;
+    
+    flex-wrap: wrap-reverse;
+}
+
+.izq {
+    text-align: left;
+    padding: 15px;
+    display: inline-flex;
+    flex-direction: column;
+    flex: 2 0 260px;
+}
+
+.izq h2{
+    font-weight: lighter;
+    margin: 15px auto;
+}
+
+.izq .linksrapidos {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.izq .linksrapidos a{
+    margin-top: 15px;
+    flex-basis: 180px;
+    padding: 30px 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 0px 0px 5px black;
+    margin-right: 20px;
+}
+
+.izq .linksrapidos a:hover{
+    background-color: rgba(0,0,0, .2);
+}
+
+.izq .textoabajo {
+    margin-top: auto;
+} 
+
+.izq .textoabajo h2{
+    margin-right: 20px;
+    display: inline-block;
+    margin-bottom: 0px;
+    line-height: 42px;
+}
+
+.imagenDer {
+    flex: 1 0 303px;
+    padding: 15px;
+}
+
+.imagenDer img{
+    
+    margin-left: auto;
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    min-width: 300px;
+}
+
+/* Section Nuestros servicios */
+
+/* #serviciosPrinc div.contenido{
+    margin: 0px auto;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#serviciosPrinc div.contenido div.caractserv{
+    margin: 25px 0px;
+    flex: 1 1 50%;
+    min-width: 280px;
+    text-align: left;
+} */
+
+
+/* PRUEBAS PARA LAS LISTAS */
+
+/* Estilo para la sección de servicios */
+#nuestrosServicios {
+    padding: 20px;
+}
+
+/* Contenedor de contenido */
+#nuestrosServicios .contenido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Estilos para cada descripción de servicio */
+#nuestrosServicios .descripcion {
+    flex: 1 1 calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efecto hover para las tarjetas de servicio */
+#nuestrosServicios .descripcion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para los títulos de los servicios */
+#nuestrosServicios .caractserv h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+/* Estilo para las listas */
+#nuestrosServicios .caractserv ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Estilo para los ítems de la lista */
+#nuestrosServicios .caractserv ul li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Estilo para el footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el texto de copyright */
+.footer .copyright {
+    font-size: 0.9em;
+    margin: 0;
+}
